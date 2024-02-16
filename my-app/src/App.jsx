@@ -29,6 +29,8 @@ const menuItems = [
       <h1>{title}</h1>
 
       <Menu elemente={menuItems}/>
+      <Menu elemente={menuItems}/>
+      <Menu elemente={menuItems}/>
 
       <p>Acesta este primul meu text in React!</p>
       <button onClick={clickButton}>Click button 1!</button>
