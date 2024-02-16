@@ -1,4 +1,7 @@
 import './App.css'
+import Button1 from './Button1';
+import Button2 from './Button2';
+import Button3 from './Button3';
 import Menu from './Menu';
 
 function App() {
@@ -26,6 +29,7 @@ const menuItems = [
 
   return (
     <div>
+
       <h1>{title}</h1>
 
       <Menu elemente={menuItems}/>
@@ -33,8 +37,14 @@ const menuItems = [
       <Menu elemente={menuItems}/>
 
       <p>Acesta este primul meu text in React!</p>
-      <button onClick={clickButton}>Click button 1!</button>
-      <button onClick={() => {console.log('button 2 clicked')}}>Click button 2!</button>
+
+      {/* Transmitem proprietatea 'clickProp' cu valoarea funcției 'clickButton' către componenta 'Button1' */}
+      <Button1 clickProp={clickButton}/>
+      
+      <Button2 />
+
+      <Button3 text='Click button' icon='3' handleClick={() => {console.log('button 3 clicked')}}/>
+
     </div>
   )
 }
