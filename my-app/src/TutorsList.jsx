@@ -4,10 +4,10 @@ const TutorsList = ({ elemente }) => {
     return(
         <div>
             <ul>
-                {elemente.map( element => {
+                {elemente.map( el => {
                     return(
-                        <li key={element.phone}>
-                          {`${element.firstName} ${element.lastName} ${'|'} ${element.phone} ${'|'} ${element.email}`}
+                        <li key={el.phone}>
+                          {`${el.firstName} ${el.lastName} ${'|'} ${el.phone} ${'|'} ${el.email}`}
                         </li>
                     )
                     

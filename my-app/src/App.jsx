@@ -5,6 +5,7 @@ import Button3 from './Button3';
 import Menu from './Menu';
 import SearchBar from './SearchBar';
 import TutorsList from './TutorsList';
+import Books from './books/Books';
 
 function App() {
 
@@ -83,6 +84,8 @@ const data =
       <SearchBar text={'12345678901'} esteVizibil={isVisible} pret={753}/>
 
       <TutorsList elemente={data.tutors}/>
+
+      <Books/>
 
     </div>
   )
