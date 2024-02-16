@@ -3,8 +3,11 @@ import Button1 from './Button1';
 import Button2 from './Button2';
 import Button3 from './Button3';
 import Menu from './Menu';
+import SearchBar from './SearchBar';
 
 function App() {
+
+const isVisible = true;
 
 const title = 'React'
 
@@ -44,6 +47,8 @@ const menuItems = [
       <Button2 />
 
       <Button3 text='Click button' icon='3' handleClick={() => {console.log('button 3 clicked')}}/>
+
+      <SearchBar text={'12345678901'} esteVizibil={isVisible} pret={23}/>
 
     </div>
   )
