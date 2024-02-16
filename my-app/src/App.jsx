@@ -10,9 +10,18 @@ const clickButton = () => {
 }
 
 const menuItems = [
-  { name: 'Home' },
-  { name: 'About' },
-  { name: 'Contacts' },
+  { 
+    id: 0,
+    name: 'Home' 
+  },
+  { 
+    id: 1,
+    name: 'About' 
+  },
+  { 
+    id: 2,
+    name: 'Contacts' 
+  },
 ]
 
   return (

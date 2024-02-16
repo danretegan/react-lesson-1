@@ -4,9 +4,13 @@ const Menu = ({ elemente }) => {
     return (
         <div>
             <ul>
-                <li>{elemente[0].name}</li>
-                <li>{elemente[1].name}</li>
-                <li>{elemente[2].name}</li>
+              {elemente.map( element => {
+                return(
+                        <li key={element.id}>
+                    {element.name}
+                        </li>
+                       )
+              })}
             </ul>
         </div>
     )
